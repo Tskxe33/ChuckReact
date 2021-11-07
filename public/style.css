@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  height: 100vh;
+  color: #fff;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8rem;
+  background-image: linear-gradient(#222, #222);
+}
+
+.chuck__heading {
+  font-size: 5.2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.chuck__gif {
+  margin-top: 22rem;
+  margin-bottom: 5rem;
+}
+
+.chuck__img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.chuck__btn {
+  background-color: #f0932b;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  transition: all 0.2s;
+}
+
+.chuck__btn:active {
+  transform: translateY(0.4rem);
+}
+
+.chuck__joke {
+  max-width: 50%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hidden {
+  display: none;
+}
