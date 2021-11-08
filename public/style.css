@@ -70,7 +70,7 @@ body {
 }
 
 .chuck__joke {
-  max-width: 50%;
+  max-width: 100%;
   text-align: center;
   font-size: 2rem;
 }
@@ -87,4 +87,12 @@ body {
 
 .hidden {
   display: none;
+}
+
+.removeHidden {
+  display: block;
+}
+
+.addFilter {
+  filter: brightness(5%);
 }
