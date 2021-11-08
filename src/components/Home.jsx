@@ -6,6 +6,7 @@ import { getJoke } from "./../jokes";
 class Home extends Component {
   state = {
     active: false,
+    clicked: false,
     joke: "",
   };
 
@@ -18,7 +19,7 @@ class Home extends Component {
   handleClick = () => {
     console.log(this.chuckContent);
     getJoke().then((res) => {
-      this.setState({ joke: res[0].joke });
+      this.setState({ joke: res[0].joke, clicked: true });
     });
   };
 
@@ -39,7 +40,7 @@ class Home extends Component {
             className="chuck__btn animate__animated"
             onClick={this.handleClick}
           >
-            Chuck It!
+            {this.state.clicked ? `More chuckles!` : "Chuck It!"}
           </button>
         </div>
         <p className="chuck__joke animate__animated">{this.state.joke}</p>
