@@ -30,7 +30,7 @@ class Home extends Component {
         <BackgroundVideo />
         <div
           className={`chuck__content hidden animate__animated ${
-            this.state.active ? "removeHidden" : ""
+            this.state.active ? "removeHidden animate__tada" : ""
           }`}
         >
           <div className="chuck__gif animate__animated">
